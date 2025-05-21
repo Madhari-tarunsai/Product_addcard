@@ -1,0 +1,113 @@
+/* Layout setup */
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.div1, .div2, .div3 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  min-width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* Center contents in Categories */
+.div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div1 button {
+  width: 150px;
+  margin: 10px 0;
+}
+
+/* Buttons base style */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Product list layout */
+.div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: large;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product button {
+  background-color: orangered;
+  color: white;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+/* Centered CardItems block */
+.div3 {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card {
+  background-color: #eee;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div1, .div2, .div3 {
+    width: 90%;
+  }
+}
